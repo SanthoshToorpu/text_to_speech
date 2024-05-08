@@ -47,9 +47,7 @@ export const HelloWorld: React.FC<RequestMetadata> = (props) => {
   );
   const transitionStart = 0;
 
-  const [extractedValues, setExtractedValues] = useState<ExtractedValues | null>(
-    null
-  );
+  const [extractedValues, setExtractedValues] = useState<ExtractedValues | null>( null );
 
   return (
     <AbsoluteFill
