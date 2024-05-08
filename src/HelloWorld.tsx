@@ -1,4 +1,3 @@
-import Papa from "papaparse";
 import {
   AbsoluteFill,
   interpolate,
@@ -13,8 +12,6 @@ import { voices } from "./server/TextToSpeech/constants";
 import { RequestMetadata, VoiceType } from "./lib/interfaces";
 import { z } from "zod";
 import { zColor } from "@remotion/zod-types";
-import { useEffect, useState } from "react";
-import { staticFile } from "remotion";
 
 // Define the type for the CSV data
 type ExtractedValues = {
@@ -46,8 +43,6 @@ export const HelloWorld: React.FC<RequestMetadata> = (props) => {
     }
   );
   const transitionStart = 0;
-
-  const [extractedValues, setExtractedValues] = useState<ExtractedValues | null>( null );
 
   return (
     <AbsoluteFill
