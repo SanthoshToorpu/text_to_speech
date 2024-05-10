@@ -84,14 +84,9 @@ export const HelloWorld: React.FC<RequestMetadata> = (props) => {
             text1={props.dialogue[4]}
           />
         </Sequence>
-        <Sequence from={1965} durationInFrames={2401 - 1965}>
+        <Sequence from={1965}>
           <Slide1
             text1={props.dialogue[5]}
-          />
-        </Sequence>
-        <Sequence from={2401}>
-          <Slide1
-            text1={props.dialogue[6]}
           />
         </Sequence>
       </div>

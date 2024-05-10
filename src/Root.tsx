@@ -4,6 +4,7 @@ import { HelloWorld, mySchema } from "./HelloWorld";
 import { getTTSFromServer } from "./lib/client-utils";
 import { waitForNoInput } from "./debounce";
 
+
 export const RemotionRoot: React.FC = () => {
   const FPS = 30;
   
@@ -17,7 +18,8 @@ export const RemotionRoot: React.FC = () => {
   ]
 
   return (
-    <Composition
+    <div>
+      <Composition
       id="HelloWorld"
       schema={mySchema}
       component={HelloWorld}
@@ -48,5 +50,7 @@ export const RemotionRoot: React.FC = () => {
         };
       }}
     />
+    </div>
+    
   );
 };
