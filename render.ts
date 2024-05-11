@@ -1,8 +1,8 @@
 import { selectComposition, renderMedia } from "@remotion/renderer";
 import { webpackOverride } from "./webpack-override";
 import { bundle } from "@remotion/bundler";
-import { data } from "./data-json";
- 
+import data from "./data-json"; 
+
 const compositionId = "HelloWorld";
  
 const renderfun = async () => {
